@@ -17,7 +17,7 @@
 # print(f"Subtotal: ${price*quantity}")
 
 
-# msg = "         Hi lol strip my ass         "
+# msg = "         Hi lol          "
 # msg = msg.strip(' ')
 # print(msg)
 
@@ -199,9 +199,50 @@
 #     print(f"Number is: {num}")
 #     num -= 1
 
-word = 'Hello'
-for char in word:
-    print(char)
+# word = 'Hello'
+# for char in word:
+#     print(char)
 
-for letter in 'Pop tart':
-    print(letter)
+# for letter in 'Pop tart':
+#     print(letter)
+
+# for num in range(-10, 10):  # doesn't include 10 (the stopping point)
+#     print(num)
+
+# for num in range(10):
+#     print("HELLO WORLD!!")
+
+# for num in range(0,100,2):
+#     print(num)
+
+# for num in range(10,0,-1):  # in order to count backwards
+#     print(num)
+
+
+
+# LOOPS PROBLEM SET
+
+word = "supercalifragilisticexpialidocious"
+
+for w in word:
+    print(w)
+
+index = 0
+length = len(word)
+while index != length:
+    print(word[index])
+    index += 1
+
+start = 100
+while start <= 140:
+    print(start)
+    start += 2
+
+for num in range(100,142,2):
+    print(num)
+
+passphrase = 'sillygoose'
+user_input = input("Please say the word: 'sillygoose' -->   ").lower()
+while user_input != passphrase:
+    user_input = input("Hey that's not nice. Please say it: ").lower()
+print("Thanks for saying it! :)")
