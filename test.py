@@ -222,27 +222,53 @@
 
 # LOOPS PROBLEM SET
 
-word = "supercalifragilisticexpialidocious"
+# word = "supercalifragilisticexpialidocious"
 
-for w in word:
-    print(w)
+# for w in word:
+#     print(w)
 
-index = 0
-length = len(word)
-while index != length:
-    print(word[index])
-    index += 1
+# index = 0
+# length = len(word)
+# while index != length:
+#     print(word[index])
+#     index += 1
 
-start = 100
-while start <= 140:
-    print(start)
-    start += 2
+# start = 100
+# while start <= 140:
+#     print(start)
+#     start += 2
 
-for num in range(100,142,2):
-    print(num)
+# for num in range(100,142,2):
+#     print(num)
 
-passphrase = 'sillygoose'
-user_input = input("Please say the word: 'sillygoose' -->   ").lower()
-while user_input != passphrase:
-    user_input = input("Hey that's not nice. Please say it: ").lower()
-print("Thanks for saying it! :)")
+# passphrase = 'sillygoose'
+# user_input = input("Please say the word: 'sillygoose' -->   ").lower()
+# while user_input != passphrase:
+#     user_input = input("Hey that's not nice. Please say it: ").lower()
+# print("Thanks for saying it! :)")
+
+for char in 'pickelface':
+    if char == 'f':
+        break
+    print(char)
+
+print("After loop")
+
+message = input("say hi: ").lower()
+while True:
+    if message == "hi":
+        print("Thank you. Hi to you too!")
+        break
+    else:
+        message = input("That's rude. Please say hi.. ").lower()
+
+for char in "FATCAT":
+    if char == "A":
+        continue
+    print(char)
+
+
+for letter in "supercalifragilisticexpialidocious":
+    if letter in "aeiou":
+        continue
+    print(letter)
