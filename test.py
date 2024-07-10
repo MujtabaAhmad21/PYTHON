@@ -247,28 +247,69 @@
 #     user_input = input("Hey that's not nice. Please say it: ").lower()
 # print("Thanks for saying it! :)")
 
-for char in 'pickelface':
-    if char == 'f':
-        break
-    print(char)
+# for char in 'pickelface':
+#     if char == 'f':
+#         break
+#     print(char)
 
-print("After loop")
+# print("After loop")
 
-message = input("say hi: ").lower()
-while True:
-    if message == "hi":
-        print("Thank you. Hi to you too!")
-        break
-    else:
-        message = input("That's rude. Please say hi.. ").lower()
+# message = input("say hi: ").lower()
+# while True:
+#     if message == "hi":
+#         print("Thank you. Hi to you too!")
+#         break
+#     else:
+#         message = input("That's rude. Please say hi.. ").lower()
 
-for char in "FATCAT":
-    if char == "A":
-        continue
-    print(char)
+# for char in "FATCAT":
+#     if char == "A":
+#         continue
+#     print(char)
 
 
-for letter in "supercalifragilisticexpialidocious":
-    if letter in "aeiou":
-        continue
-    print(letter)
+# for letter in "supercalifragilisticexpialidocious":
+#     if letter in "aeiou":
+#         continue
+#     print(letter)
+
+# for outer in range(1,5):
+#     print(outer)
+#     for inner in range(1,5):
+#         print("\t", inner)
+
+def laugh_LOL():
+    print("HA" * 20)
+    print("LOL" * 20)
+laugh_LOL()
+
+def laugh(intensity):
+    print("HA!" * intensity)
+    
+def divide(numerator, denominator):
+    if denominator == 0:
+        return "Cannot divide by zero!"
+    return numerator/denominator     
+# can have multiple return statements in a function but only one of them
+# will ever run and return keyword also marks the end of a function
+# so if we have a print statement after return, it won't be printed.
+
+num = divide(12,3)
+print(num)
+num = divide(4,0)
+print(num)
+
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    return False
+
+x = is_even(134326)
+print(x)
+
+def slugify(string):
+    string = string.replace(" ", "-").lower()
+    return string
+
+lol = slugify("Hello World I LOVE YOU")
+print(lol)
