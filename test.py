@@ -278,38 +278,109 @@
 #     for inner in range(1,5):
 #         print("\t", inner)
 
-def laugh_LOL():
-    print("HA" * 20)
-    print("LOL" * 20)
-laugh_LOL()
+# def laugh_LOL():
+#     print("HA" * 20)
+#     print("LOL" * 20)
+# laugh_LOL()
 
-def laugh(intensity):
-    print("HA!" * intensity)
+# def laugh(intensity):
+#     print("HA!" * intensity)
     
-def divide(numerator, denominator):
-    if denominator == 0:
-        return "Cannot divide by zero!"
-    return numerator/denominator     
-# can have multiple return statements in a function but only one of them
-# will ever run and return keyword also marks the end of a function
-# so if we have a print statement after return, it won't be printed.
+# def divide(numerator, denominator):
+#     if denominator == 0:
+#         return "Cannot divide by zero!"
+#     return numerator/denominator     
+# # can have multiple return statements in a function but only one of them
+# # will ever run and return keyword also marks the end of a function
+# # so if we have a print statement after return, it won't be printed.
 
-num = divide(12,3)
-print(num)
-num = divide(4,0)
-print(num)
+# num = divide(12,3)
+# print(num)
+# num = divide(4,0)
+# print(num)
 
-def is_even(num):
-    if num % 2 == 0:
-        return True
-    return False
+# def is_even(num):
+#     if num % 2 == 0:
+#         return True
+#     return False
 
-x = is_even(134326)
-print(x)
+# x = is_even(134326)
+# print(x)
 
-def slugify(string):
-    string = string.replace(" ", "-").lower()
-    return string
+# def slugify(string):
+#     string = string.replace(" ", "-").lower()
+#     return string
 
-lol = slugify("Hello World I LOVE YOU")
-print(lol)
+# lol = slugify("Hello World I LOVE YOU")
+# print(lol)
+
+# def count_vowels(sentence):
+#     count = 0
+#     for word in sentence.lower():
+#         if word in "aeiou":
+#             count += 1
+#     return count
+    
+# x = count_vowels("HELLO WORLD")
+# print(x)
+
+# def myfunc(def_para = 10):
+#     print("HA" * def_para)
+# myfunc()
+
+# def updated_slugify(string, sep = "-"):
+#     string = string.strip().lower().replace(" ", sep)
+#     return string
+# msg = "         I am Mujtaba and I am computer science student           "
+# print(updated_slugify(msg, "_"))
+
+# def greet(person = "stranger", msg = "Hi"):  # all default parameters should come at 
+#     print(f"{msg}, {person}")   # the end of the parameter list
+# greet("Tonya")
+# greet()
+
+# def get_total(price, qty=1, tax = 0.02, discount=0.0):
+#     subtotal = price * qty * (1-discount)
+#     print(subtotal * (1 + tax))
+
+# # difference in keyword arguments is that order doesn't matter
+# get_total(9.75, 5, 0.01, 0.5)
+# get_total(qty = 5 ,price = 9.75, discount= 0.5, tax =  0.01) 
+
+# # variables defined in a loop can be used outside the loop and anywhere.
+
+# for char in "OCTOPUS":
+#     color = "magenta"
+#     print(char)
+
+# if True:
+#     animal = "OSPREY"
+
+# print("AFTER LOOP:", color)
+# print("AFTER CONDITIONAL", animal)
+
+#   ENCLOSING SCOPE:- 
+# def outside():
+#     a = 10
+#     def inside():
+#         print("a is: ", a)
+#     inside()
+# outside()
+
+# LEGB (Local - Enclosing - Global - Bult-in) scope precedence
+
+# def outer():
+#     global animal
+#     animal = "Spider Crab"
+# outer()
+
+# print(animal)
+
+# score = 100
+
+# def double_score():
+#     global score
+#     score = score * 2
+
+# double_score()
+# print(score)
