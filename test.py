@@ -384,3 +384,261 @@
 
 # double_score()
 # print(score)
+
+
+#    LISTS
+#      |
+#      |
+#      |
+#     \|/
+#      -
+
+# high_scores = [99, 78, 56, 50, 20, 12]
+# print(high_scores)
+
+# stuff = [4, 5.6, True, False, 'hi', []]
+# print(stuff)
+
+# new = list("hello")
+# print(new)
+
+# new_2 = list(range(3,10))
+# print(new_2)
+
+# waitlist = ['tom', 'arya', 'amir']
+# for i in range(0,3):
+#     print(waitlist[i])
+# print(len(waitlist))
+
+# nums = [7,3,9]
+# nums[1] = 8
+# print(nums)
+
+# nums.append(5)
+# print(nums)
+
+# people = ['charlie', 'drew', 'emi']
+# waitlist.extend(people)
+# print(waitlist)
+
+# nums.insert(1, 'hi')
+# print(nums)
+
+# waitlist.insert(0, 'jasmine')
+# print(waitlist)
+
+# print("superduper"[3:7])
+# print("superduper"[3:7:2])
+
+# another_list = ['c', 6, 'a', 9, 't', 6]
+# print(stuff[0:2])
+# print(stuff[0:5:2])
+
+# nums = [4,5,6,7]
+# nums[1:3] = ['a', 'b']
+# print(nums)
+# nums[1:3] = ['a', 'b', 'c', 'd']
+# print(nums)
+# nums[1:5] = []
+# print(nums)
+
+# langs = ["Python", "C++", "Javascript", "C"]
+# langs.clear()
+# print(langs)
+
+# nums = [2,4,6,8,2,4]
+# nums.remove(4)      # only removes the first match of 4
+# print(nums)
+
+# print(waitlist.pop())
+# print(waitlist)
+
+# waitlist.pop(0)
+# print(waitlist)
+
+# del nums[2]
+# print(nums)
+
+# del nums[2:]
+# print(nums)
+
+# langs = ["Python", "C", "Javascript", "C++"]
+# for lang in langs:
+#     print(lang)
+
+# emails = ['jimbo@gmail.com', 'daisy@yahoo.com', 'ds32z@princess.net', 
+#          'anika.345@gmail.com', 'prettyinpink@pink.com', 'otter@facebook.com'
+#          , 'elton@disney.com', 'jessica@gmail.com', 'wang3@gmail.com']
+
+# for email in emails:
+#     print("******** SENDING EMAIL TO **********")
+#     print(email)
+
+# lando_2021_results = [4,3,5,8,3,5,5,5,3,4,14,10,2,7,7,8,10,10,9,10,7]
+# def average(nums):
+#     total = 0
+#     for num in nums:
+#         total += num
+#     return total/len(nums)
+
+# print(average(lando_2021_results))
+
+# drivers = ["Charles", "Pierre", "Valterri", "Lewis", "Geroge", "Lando"]
+
+# drivers[2] = "Valtteri"
+# print(drivers)
+
+# drivers.append("Esteban")
+# print(drivers)
+
+# others = ["Blue", "Elton", "Colt"]
+# drivers.extend(others)
+# print(drivers)
+
+# drivers.pop()
+# print(drivers)
+
+# drivers.pop(0)
+# print(drivers)
+
+# last = drivers.pop(0)
+# drivers.append(last)
+# print(drivers)
+
+# drivers.remove("Blue")
+# print(drivers)
+
+# drivers.remove("Elton")
+# drivers.insert(2, "Elton")
+# print(drivers)
+
+# podium = drivers[:3]
+# print(podium)
+
+# index = 0
+# position = 1
+# while index < len(drivers):
+#     print(f"{position}. {drivers[index]}")
+#     position += 1
+#     index += 1 
+
+# NESTED LISTS
+#      |
+#      |
+#      |
+#     \|/
+#      -
+
+# nums = [1,2,3,4,[5,6]]
+# print(nums[4])
+# print(nums[4][1])
+
+# couples = [
+#     ["Beyonce", "Jay-Z"],
+#     ["Johnny", "June"],
+#     ["John", "Yoko"],
+#     ["Will", "Jada"]
+# ]
+
+# print(len(couples))
+# print(couples[1])
+# print(couples[1][0])
+
+# for couple in couples:
+#     for person in couple:
+#         print(f"Sending invite to {person}")
+
+# evens = [2,4,6]
+# both = odds = [1,3,5]
+# print(both)
+
+# print(evens * 3)
+# print(4 in evens)
+# print(5 in evens)
+
+# flavors = ["chocolate", "vanilla", "mango", "strawberry"]
+# response = input("What flavor would you like? ")
+# while response.lower() not in flavors:
+#     response = input("I don't know that flavor! Try again: ")
+# print(f"Ok, {response} ice cream coming right up!")
+
+nums = [3,4,6,7,9,0,2,3,4,5,6,7,8,1,2,3]
+print(nums.count(2))
+
+nums = [1,2,3,4,5]
+nums.reverse()
+print(f"Numbers reversed: {nums}")
+
+nums = [2,8,1,9,3]
+nums.sort()
+print(f"Numbers sorted in ascending order: {nums}")
+nums.sort(reverse=True)
+print(f"Numers sorted in descending order: {nums}")
+
+colors = ["red", "orange", "purple", "green"]
+colors.sort()   # uppercase and lowercase alphabet matters in sorting
+print(f"Colors sorted from a-z: {colors}") 
+
+print([1,2,3] == [1,2,3])
+print([1,2,3] is [1,2,3])
+
+evens = [2,4,6]
+evens2 = evens
+print(evens is evens2)
+print(id(evens))
+print(id(evens2))
+
+birthday = "03/27/2020"
+birthdaylist = birthday.split("/")
+print(birthdaylist)
+
+fullname = "Teddy Richard Smith"
+fullnamelist = fullname.split(" ")
+print(fullnamelist)
+
+fruits = ["Apple", "Kiwi", "Pear"]
+fruitslist = " ".join(fruits)
+print(fruitslist)
+
+newfruitslist = "!!!".join(fruits)
+print(newfruitslist)
+
+letters = ['M', 'A', 'S', 'H']
+newletters = "".join(letters)
+print(newletters)
+
+stringlist = "!".join("hello")
+print(stringlist)
+
+#      LIST UNPACKING:- 
+RGBlist = [255,43,19]
+red, green, blue = RGBlist
+print("Red is ", red)
+print("Blue is: ", blue)
+print("Green is:", green)
+
+race_results = ['bill', 'ted', 'tammy', 'jimbo', 'billybob', 'pierre']
+gold, silver, bronze, *losers = race_results
+print("Gold winner: ", gold)
+print("Silver winner: ", silver) 
+print("Bronze winner: ", bronze)
+print("Losers are: ", *losers)
+
+list1 = [12,9,3,7]
+list2 = list1.copy()  # this method returns a shallow copy of this list
+# if it had some nested data structures, those would not have been copied.
+
+# another way to copy is using a slice
+
+list2 = list1[:]
+print(list2)
+
+# if wanted to deepcopy means the nested data structure also to be copied
+# then :-
+import copy
+list1 = [2,9,['a', 'b'], 7]
+list2 = copy.deepcopy(list1)
+
+import pyfiglet
+ascii_banner = pyfiglet.figlet_format("Hello!!")
+print(ascii_banner)
