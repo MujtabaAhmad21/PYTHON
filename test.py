@@ -908,30 +908,92 @@
 
 # ARGSKWARGS problem set
 
-def contains_pickle(*args):
-    if "pickle" in args:
-        return True
-    else:
-        return False
+# def contains_pickle(*args):
+#     if "pickle" in args:
+#         return True
+#     else:
+#         return False
     
-print(contains_pickle(1,2, 'blue', 23))
+# print(contains_pickle(1,2, 'blue', 23))
 
-def count_fails(*args):
-    count = 0
-    for num in args:
-        if num <= 50:
-            count += 1
-    return count
+# def count_fails(*args):
+#     count = 0
+#     for num in args:
+#         if num <= 50:
+#             count += 1
+#     return count
 
-print(count_fails(50, 41, 47, 74, 76, 81))
+# print(count_fails(50, 41, 47, 74, 76, 81))
 
-def get_top_students(**kwargs):
-    top_students = []
-    for student, score in kwargs.items():
-        if score >= 90:
-            top_students.append(student)
-    return top_students
+# def get_top_students(**kwargs):
+#     top_students = []
+#     for student, score in kwargs.items():
+#         if score >= 90:
+#             top_students.append(student)
+#     return top_students
 
-print(get_top_students(tim=91, stacy=83, carlos=97, jim=69))
-print(get_top_students(colt=61, elton=76))
-print(get_top_students(kitty=80, blue=95, toad=91, ))
+# print(get_top_students(tim=91, stacy=83, carlos=97, jim=69))
+# print(get_top_students(colt=61, elton=76))
+# print(get_top_students(kitty=80, blue=95, toad=91, ))
+
+#   ERRORS 
+#      |
+#      |
+#      |
+#     \|/
+#      -
+
+# Some common error types are:- 
+# SyntaxError, NameError, IndexError, TypeEror, ValueError and KeyError
+
+# def get_user_name():
+#     inp = input('Please enter your name: ')
+#     if not inp.isalpha():
+#         raise ValueError('alpha chars only')
+#     return inp
+
+# get_user_name()
+
+# try:
+#     num = int(input("Enter an integer: "))
+#     print(10/num)
+# except ValueError:
+#     print("That's not an int")
+# except ZeroDivisionError:
+#     print("Can't divide by zero")
+
+# try:
+#     num = int(input("Enter a number: "))
+# except ValueError:
+#     print("Fine I'll pick for you")
+#     num = 7
+# except EOFError:
+#     print("YOU DIDN'T ENTER ANYTHING!")
+#     num = 0
+
+# print(f"You entered {num}")
+
+#   MODULES
+#      |
+#      |
+#      |
+#     \|/
+#      -
+
+# import calendar
+
+# print(calendar.isleap(2010))
+# print(calendar.isleap(2011))
+# print(calendar.isleap(2012))
+
+# 0 is monday
+
+# print(calendar.weekday(1969,7,20))
+
+# import math
+
+# print(math.cos(0))
+
+# from math import sin,cos,tan
+
+# print(sin(1))
