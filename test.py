@@ -1,9 +1,10 @@
-# AGE CALCULATOR
+#AGE CALCULATOR
 
 # question = input("How old are you? ")
 # age = int(question)
 # age_in_days = age * 365
 # print(f"You are {age_in_days} days old")
+# print('You are', age_in_days, 'years old')    #You can also write it like this
 
 # SHOPPING CART EXERCISE
 
@@ -285,6 +286,8 @@
 
 # def laugh(intensity):
 #     print("HA!" * intensity)
+
+# laugh(20)
     
 # def divide(numerator, denominator):
 #     if denominator == 0:
@@ -997,3 +1000,8 @@
 # from math import sin,cos,tan
 
 # print(sin(1))
+
+# coding in python after a long time
+
+#mujtaba = 20
+#print("Mujtaba's age is =", mujtaba)
